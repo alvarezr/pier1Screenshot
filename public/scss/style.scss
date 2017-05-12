@@ -1,0 +1,142 @@
+body {
+    margin: 0
+}
+
+$primary-color:#448aff;
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display: block
+}
+
+nav,.card-panel {
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+// navigation stuff
+
+nav {
+    color: #fff;
+    background-color: $primary-color ;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    position:relative;
+	top:0;
+	transition:background-color .3s, opacity .2s, visibility 0s;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);
+	z-index:10;
+	
+
+    &.nav-extended {
+   
+
+        .nav-wrapper {
+            position: relative;
+            height: 100%
+        }
+
+        .nav-content {
+            position: relative;
+            line-height: normal
+        }
+
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .categories-wrapper .categories-container {
+        background-color: inherit;
+        white-space: nowrap;
+        overflow: auto;
+    }
+
+    .nav-header {
+        clear: both;
+        padding: 40px 0;
+        
+        .nh--subtittle{
+            display: block;
+            margin: -40px 0 40px 0;
+            color: rgba(255,255,255,0.8)
+        }
+    }
+
+    .nav-wrapper {
+        position: relative;
+        height: 100%
+    }
+
+    ul li.nav--active {
+        background-color: rgba(0,0,0,0.1)
+    }
+    
+    .nav--background {
+        overflow:hidden;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:-1;
+        opacity:.1;
+
+        img, .__opaque {
+            opacity:0;
+            position:absolute;
+            top:50%;
+            -webkit-transform:translateY(-50%);
+            transform:translateY(-50%);
+            right:0;
+            left:0;
+            margin:0 auto;
+            max-width:100%;
+            -webkit-filter:grayscale(100%);
+            filter:grayscale(100%);
+            transition:opacity .7s
+        }
+
+        img.nav--active, .__opaque.nav--active {
+            opacity: 1
+        }
+
+        .__opaque {
+            top:0;
+            bottom:0;
+            -webkit-transform:none;
+            transform:none;
+            background-repeat:repeat
+        }
+        
+    }
+}
+// float
+.__right{
+    float: right;
+}
+
+// db
+.__auto--center {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+
+    @media only screen and (min-width: 601px) {
+            width:85%
+    }
+
+    @media only screen and (min-width: 993px) {
+            width:70%
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hide-on-med-and-down {
+        display:none !important
+    }
+}
+
+.af.cc--background{
+    background-color: $primary-color !important;
+}
+

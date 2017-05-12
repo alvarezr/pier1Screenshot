@@ -10,35 +10,92 @@
     </head>
     <body>
        <nav class="nav-extended">
-        <div class="nav-background">
-            <div class="ea k" style="background-image: url('/img/icons.png');"></div>
+        <div class="nav--background ">
+            <div class="__opaque nav--active" style="background-image: url('/img/icons.png');"></div>
         </div>
-        <div class="nav-wrapper db">
+        <div class="nav-wrapper __auto--center">
             <a href="#" class="brand-logo"><i class="material-icons">image</i>Gallery</a>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="nav-r hide-on-med-and-down">
-                <li class="k"><a href="/pages/demo">Gallery</a></li>
+            <ul class="__right  hide-on-med-and-down">
+                <li class="nv--active"><a href="/pages/demo">Gallery</a></li>
             </ul>
             <!-- Dropdown Structure -->
             <div class="nav-header desc">
                 <h1>Screenshot Everything</h1>
-                <div class="ge">browserstack</div>
+                <div class="nh--subtittle">browserstack</div>
             </div>
         </div>
 
         <!-- Fixed Masonry Filters -->
-        <div class="categories-wrapper af lighten-1">
+        <div class="categories-wrapper af cc--background">
             <div class="categories-container pin-top" style="top: 0px;">
-            <ul class="categories db">
-                <li class="k"><a href="#all">All</a></li>
+            <ul class="categories __auto--center">
+                <li class="nav--active"><a href="#all">All</a></li>
                 <li class=""><a href="#polygon">Polygon</a></li>
-                <li class=""><a href="#bigbang">Big Bang</a></li>
-                <li class=""><a href="#sacred">Sacred Geometry</a></li>
             </ul>
             </div>
         </div>
     </nav>
-
+    <div id="main-wrapper">
+        <div class="__auto--center">
+             <div class="row">
+                <div class="col s12 m6">
+                    <div class="card darken-1">
+                        <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="img/office.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <script type="text/javascript" src="jquery.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
