@@ -140,3 +140,11 @@ nav {
     background-color: $primary-color !important;
 }
 
+.grid-item-content {
+  height: 100px;
+  background: #D26;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item-content--height2 { height: 200px; }

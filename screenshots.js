@@ -1,7 +1,7 @@
 var BrowserStack = require('browserstack'),
  _ = require('lodash'),
  browser = require('./lib/browsers'),
- basePath = 'images/',
+ basePath = './public/screenshots/',
  request = require('request'),
  fs = require('fs'),
  JobsQueue = [],
