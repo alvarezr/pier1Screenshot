@@ -1,0 +1,31 @@
+{ path: './public/screenshots/',
+  name: 'screenshots',
+  type: 'folder',
+  imgs: 
+   [ { path: './public/screenshots//14944453378086f4673dc9_android_Samsung-Galaxy-S5_4.4_portrait.png',
+       name: '14944453378086f4673dc9_android_Samsung-Galaxy-S5_4.4_portrait.png',
+       type: 'file' },
+     { path: './public/screenshots//1494445337814ad9e449c1_win8.1_chrome_50.0.jpg',
+       name: '1494445337814ad9e449c1_win8.1_chrome_50.0.jpg',
+       type: 'file' },
+     { path: './public/screenshots//1494445337815e8978d513_win8.1_ie_11.0.jpg',
+       name: '1494445337815e8978d513_win8.1_ie_11.0.jpg',
+       type: 'file' },
+     { path: './public/screenshots//1494445337816a5506ad33_macelc_chrome_50.0.jpg',
+       name: '1494445337816a5506ad33_macelc_chrome_50.0.jpg',
+       type: 'file' },
+     { path: './public/screenshots//14944453378234e5df8db9_android_Samsung-Galaxy-S5_4.4_portrait.jpg',
+       name: '14944453378234e5df8db9_android_Samsung-Galaxy-S5_4.4_portrait.jpg',
+       type: 'file' },
+     { path: './public/screenshots//1494445337824809928133_win8.1_chrome_50.0.jpg',
+       name: '1494445337824809928133_win8.1_chrome_50.0.jpg',
+       type: 'file' },
+     { path: './public/screenshots//1494445337824b69d835fd_macelc_chrome_50.0.jpg',
+       name: '1494445337824b69d835fd_macelc_chrome_50.0.jpg',
+       type: 'file' },
+     { path: './public/screenshots//1494445337824e47378a59_win8.1_ie_11.0.jpg',
+       name: '1494445337824e47378a59_win8.1_ie_11.0.jpg',
+       type: 'file' } 
+       
+    ] 
+}

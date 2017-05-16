@@ -10,37 +10,45 @@
     </head>
     <body>
        <nav class="nav-extended">
-        <div class="nav-background">
-            <div class="ea k" style="background-image: url('/img/icons.png');"></div>
+        <div class="nav--background ">
+            <div class="__opaque nav--active" style="background-image: url('/img/icons.png');"></div>
         </div>
-        <div class="nav-wrapper db">
+        <div class="nav-wrapper __auto--center">
             <a href="#" class="brand-logo"><i class="material-icons">image</i>Gallery</a>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="nav-r hide-on-med-and-down">
-                <li class="k"><a href="/pages/demo">Gallery</a></li>
+            <ul class="__right  hide-on-med-and-down">
+                <li class="nv--active"><a href="/pages/demo">Gallery</a></li>
             </ul>
             <!-- Dropdown Structure -->
             <div class="nav-header desc">
                 <h1>Screenshot Everything</h1>
-                <div class="ge">browserstack</div>
+                <div class="nh--subtittle">browserstack</div>
             </div>
         </div>
 
         <!-- Fixed Masonry Filters -->
-        <div class="categories-wrapper af lighten-1">
+        <div class="categories-wrapper af cc--background">
             <div class="categories-container pin-top" style="top: 0px;">
-            <ul class="categories db">
-                <li class="k"><a href="#all">All</a></li>
-                <li class=""><a href="#polygon">Polygon</a></li>
-                <li class=""><a href="#bigbang">Big Bang</a></li>
-                <li class=""><a href="#sacred">Sacred Geometry</a></li>
+            <ul class="categories __auto--center">
+                <li class="nav--active"><a href="#all">All</a></li>
+               
             </ul>
             </div>
         </div>
     </nav>
-
+    <div id="main-wrapper">
+        <div class="__auto--center">
+             <div class="row" data-bind="foreach: images">
+                <div class="col s12 m6">
+                    <img class="materialboxed" width="350" data-bind="attr:{src: path}" >
+                </div>
+            </div>
+        </div>
+    </div>
       <script type="text/javascript" src="jquery.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
 
