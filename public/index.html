@@ -39,8 +39,10 @@
     <div id="main-wrapper">
         <div class="__auto--center">
              <div class="row" data-bind="foreach: images">
-                <div class="col s12 m6">
-                    <img class="materialboxed" width="350" data-bind="attr:{src: path}" >
+                <div class="col s12 m4">
+                    <div style="height:240px;overflow:hidden;width:350px;">
+                        <img class="" data-bind="attr:{src: path}" >
+                    </div>
                 </div>
             </div>
         </div>

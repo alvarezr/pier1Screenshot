@@ -9,6 +9,7 @@ var app = (function () {
             console.log(data);
             ko.applyBindings({'images':data.imgs});
             initGallery();
+            $('.materialboxed').materialbox();
         });
     }
 
@@ -31,3 +32,4 @@ var app = (function () {
  })();
  console.log(ko);
 app.loadImages();
+

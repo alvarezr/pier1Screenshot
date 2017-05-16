@@ -1,7 +1,7 @@
 var BrowserStack = require('browserstack'),
  _ = require('lodash'),
  browser = require('./lib/browsers'),
- basePath = './public/screenshots/',
+ basePath = './public/images/',
  request = require('request'),
  fs = require('fs'),
  JobsQueue = [],
@@ -62,8 +62,15 @@ function getScreenshotsInfo(currentJobId){
                 _.forEach(job.screenshots, function(screen){
                     // split url  
                     if(screen.image_url){
-                        let img_src = randomId() + '_' + _.last(screen.image_url.split('/'));
-                        download(screen.image_url, img_src, function(e) {}); 
+                        // need to refactor 
+                        let imageId = randomId();
+                        let img_src = _.last(screen.image_url.split('/')).split('.');
+                        let image = img_src[0] + '_' + imageId + '.' + _.last(img_src); 
+                        // let thumb_src = _.last(screen.thumb_url.split('/')).split('.');
+                        // let thumb = thumb_src[0] + '_' + imageId + '.' + _.last(thumb_src); 
+
+                        download(screen.image_url, image, function(e) {}); 
+                        // download(screen.thumb_url, thumb, function(e) {}); 
                     }                  
                 });
 
