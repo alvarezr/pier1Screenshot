@@ -76,6 +76,10 @@ nav {
 .__right {
   float: right; }
 
+.header {
+  color: #333952;
+  font-weight: 300; }
+
 .__auto--center {
   margin: 0 auto;
   max-width: 1280px;
@@ -93,7 +97,7 @@ nav {
 
 /* ---- .grid-item ---- */
 .grid .grid-sizer {
-  width: calc(100% / 3 * 1); }
+  width: 33.2%; }
 
 .grid .grid-item {
   margin-bottom: 15px; }
@@ -101,6 +105,6 @@ nav {
     display: block;
     width: 100%; }
 
-.grid .grid-item-col, .grid .one {
-  width: calc(100% / 3 * 1);
+.grid .grid-item-col {
+  width: 33.2%;
   margin-bottom: 15px; }

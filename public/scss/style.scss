@@ -115,6 +115,11 @@ nav {
     float: right;
 }
 
+.header {
+    color: #333952;
+    font-weight: 300;
+}
+
 // db
 .__auto--center {
     margin: 0 auto;
@@ -140,7 +145,7 @@ nav {
 .grid{
 
     .grid-sizer{
-      width: calc(100% / 3 * 1);
+      width: 33.2%;
     }
 
     .grid-item{
@@ -151,8 +156,8 @@ nav {
         }
     }
 
-    .grid-item-col, .one {
-        width: calc(100% / 3 * 1);
+    .grid-item-col {
+        width: 33.2%;
         margin-bottom: 15px;
     }
 }

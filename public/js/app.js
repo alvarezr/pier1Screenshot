@@ -24,7 +24,7 @@ var app = (function () {
                 columnWidth: '.grid-item-col'
             }); 
             
-        $('.materialboxed').materialbox();
+        // $('.materialboxed').materialbox();
     }
 
     return {
@@ -34,4 +34,14 @@ var app = (function () {
  })();
 
 app.loadImages();
+
+jQuery( document ).ready( function( $ ) {
+  var $container = $('.grid').masonry({
+    columnWidth: 1
+  });
+  
+  $container.imagesLoaded( function() {
+    $container.masonry();
+  });
+});
 
