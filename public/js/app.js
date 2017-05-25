@@ -6,10 +6,8 @@ var app = (function () {
         var res = $.get(imagesData)
         .done(function(data){
             data = JSON.parse(data);
-            console.log(data);
             ko.applyBindings({'images':data.imgs});
-            initGallery();
-            $('.materialboxed').materialbox();
+            initGallery();    
         });
     }
 
@@ -18,11 +16,15 @@ var app = (function () {
     }
 
     function initGallery(){
-        $('.grid').masonry({
-            itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
+        console.log('init masonry');
+        var $grid = $('.grid');
+        $grid.masonry({
+                itemSelector: '.grid-item-col',
+                percentPosition: true,
+                columnWidth: '.grid-item-col'
+            }); 
+            
+        // $('.materialboxed').materialbox();
     }
 
     return {
@@ -30,6 +32,16 @@ var app = (function () {
     };
  
  })();
- console.log(ko);
+
 app.loadImages();
+
+jQuery( document ).ready( function( $ ) {
+  var $container = $('.grid').masonry({
+    columnWidth: 1
+  });
+  
+  $container.imagesLoaded( function() {
+    $container.masonry();
+  });
+});
 

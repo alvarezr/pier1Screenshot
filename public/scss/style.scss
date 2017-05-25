@@ -115,6 +115,11 @@ nav {
     float: right;
 }
 
+.header {
+    color: #333952;
+    font-weight: 300;
+}
+
 // db
 .__auto--center {
     margin: 0 auto;
@@ -136,15 +141,26 @@ nav {
     }
 }
 
-.af.cc--background{
-    background-color: $primary-color !important;
+/* ---- .grid-item ---- */
+.grid{
+
+    .grid-sizer{
+      width: 33.2%;
+    }
+
+    .grid-item{
+        margin-bottom: 15px;
+        .grid-img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .grid-item-col {
+        width: 33.2%;
+        margin-bottom: 15px;
+    }
 }
 
-.grid-item-content {
-  height: 100px;
-  background: #D26;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-}
 
-.grid-item-content--height2 { height: 200px; }
+
